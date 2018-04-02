@@ -1,0 +1,68 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ASUS
+ * Date: 1.4.2018
+ * Time: 00:46
+ */
+include '../Model/DBConnection.php';
+//include '../Controller/sessionControl.php';
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoşgeldiniz</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/style1.css" />
+</head>
+<body>
+<div class="container" >
+    <div id="header">
+        <div class="header" >
+            <div id="logo" align="left">
+            </div>
+            <div id="baslik">
+                <p><br><br><br>
+                    T.C.<br>
+                    SAKARYA ÜNİVERSİTESİ<br>
+                    AKADEMİK EĞİTİM BİLGİ SİSTEMİ
+                </p>
+            </div>
+        </div>
+    </div>
+        <div align="center" >
+<form id="form1" name="form1" method="post" action="../Controller/sessionStart.php">
+    <table width="300">
+        <tr>
+            <td width="120"><h3 style="color: black">Tc Kimlik</h3></td>
+            <td><label for="tcKimlik"></label>
+                <input style="height: 30px" type="text" name="tcKimlik" id="tcKimlik"></td>
+        </tr>
+        <tr>
+            <td><h3 style="color: black">Kullanıcı Adı</h3></td>
+            <td><label for="kullaniciAdi"></label>
+                <input style="height: 30px" type="text" name="kullaniciAdi" id="kullaniciAdi" /></td>
+        </tr>
+        <tr>
+            <td><h3 style="color: black">Şifre</h3></td>
+            <td><label for="sifre"></label>
+                <input style="height: 30px" type="password" name="sifre" id="sifre" /></td>
+        </tr>
+        <tr>
+            <td > </td>
+            <td colspan="2" align="center" valign="middle">
+                <input style="width: 172px; height: 30px; margin: 1px" type="submit" name="girisYap" id="girisYap"  value= "GirişYap">
+            </td>
+
+
+        </tr>
+    </table>
+    <input type="radio" name="admin" value="admin"><b style="color: black">Admin</b>
+    <input type="radio" name="akademik_per" value="akademik_per"><b style="color: black">Akademik Personel</b>
+    <input type="radio" name="ogrenci" value="ogrenci"><b style="color: black">Öğrenci</b>
+
+</form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    background: lightgray;
+    color:#FFF;
+}
+
+
+
+
+.header {
+    position:relative;
+    padding:0 0;
+    margin:0 ;
+    width:100%;
+}
+/*------header------*/
+.container #header{
+    background: none repeat scroll 0 0 #284480;
+    height: 205px;
+    margin: 0;
+    padding: 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.container #header #logo{
+    position:relative;
+    width:260px;
+    height:205px;
+    margin:0 0;
+    background:url("../foto/sau.jpg")  no-repeat scroll 0 0 transparent;
+    padding-left: 0;
+    float:left;
+}
+.container #header #baslik{
+    padding:0 400px;
+    font-weight:bold;
+    color:#FFF;
+    font-size:18px;
+    text-align: center;
+    line-height:26px;
+    width:540px;
+}
+.container #header #login{
+    position:relative;
+    width:250px;
+    height:205px;
+    float:right;
+    font-size:11px;
+}
+
+.box
+{
+    width:1300px;
+    height: 250px;
+    padding:40px;
+    background-color:lightgreen;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
