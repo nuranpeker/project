@@ -28,7 +28,7 @@ if(isset($_POST["action"]))
     }
     if($_POST["action"] == "Veri Al")
     {
-        $output = '';
+        $output = [];
         $query = "SELECT* FROM ogrenciler WHERE id = '".$_POST["user_id"]."'";
         $result = $object->execute_query($query);
         while($row = mysqli_fetch_array($result))
